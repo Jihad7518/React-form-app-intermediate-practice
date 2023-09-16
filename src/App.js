@@ -13,7 +13,6 @@ function App() {
     const {name, value, checked, type} = event.target;
     setFormData( (prev) => ({...prev, [name]:type === "checkbox" ? checked: value}) );
   }
-  
 
   function submitHandler(event) {
     event.preventDefault();
@@ -38,7 +37,7 @@ function App() {
       className="outline w-full mb-3"
     />
 
-         <br/>
+    <br/>
     <label htmlFor="lastName">Last name</label>
     <br/>
     <input
@@ -63,7 +62,8 @@ function App() {
       onChange={changeHandler}
       className="outline w-full mb-3"
     />
-        <br/>
+
+    <br/>
     <label htmlFor="country">Country</label>
     <br/>
     <select
@@ -92,7 +92,8 @@ function App() {
       onChange={changeHandler}
       className="outline w-full mb-3"
     />
-        <br/>
+
+    <br/>
     <label htmlFor="city">City</label>
     <br/>
     <input
@@ -118,7 +119,7 @@ function App() {
       className="outline w-full mb-3"
     />
 
-        <br/>
+    <br/>
     <label htmlFor="postalCode">Postal Code</label>
     <br/>
     <input
@@ -144,8 +145,7 @@ function App() {
         checked={formData.comments}
         onChange={changeHandler}
       />
-
-          <div>
+      <div>
         <label htmlFor="comments">Comments</label>
         <p>Get notified when someones posts a comment on a posting.</p>
       </div>
@@ -165,7 +165,7 @@ function App() {
       </div>
       </div>
 
- <div className="flex">
+      <div className="flex">
       <input
         id="offers"
         name="offers"
@@ -180,8 +180,10 @@ function App() {
 </p>
       </div>
       </div>
+      
 
-</fieldset>
+
+    </fieldset>
 
     <br/>
     <br/>
@@ -207,7 +209,7 @@ function App() {
         value="Same as email"
         onChange={changeHandler}
       />
-          
+
       <label htmlFor="pushEmail">Same as email</label>
 
       <br/>
@@ -237,3 +239,7 @@ function App() {
    </form>
 
    </div>
+  );
+}
+
+export default App;
