@@ -117,4 +117,31 @@ function App() {
       onChange={changeHandler}
       className="outline w-full mb-3"
     />
-        
+
+        <br/>
+    <label htmlFor="postalCode">Postal Code</label>
+    <br/>
+    <input
+      type="text"
+      name="postalCode"
+      id="postalCode"
+      placeholder="110077"
+      value={formData.postalCode}
+      onChange={changeHandler}
+      className="outline w-full mb-3"
+    />
+
+    <br/>
+    <br/>
+    <fieldset>
+      <legend>By Email</legend>
+
+      <div className="flex">
+      <input
+        id="comments"
+        name="comments"
+        type="checkbox"
+        checked={formData.comments}
+        onChange={changeHandler}
+      />
+          
