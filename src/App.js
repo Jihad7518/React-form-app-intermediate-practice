@@ -144,4 +144,25 @@ function App() {
         checked={formData.comments}
         onChange={changeHandler}
       />
+
+          <div>
+        <label htmlFor="comments">Comments</label>
+        <p>Get notified when someones posts a comment on a posting.</p>
+      </div>
+      </div>
+
+      <div className="flex">
+      <input
+        id="candidates"
+        name="candidates"
+        type="checkbox"
+        checked={formData.candidates}
+        onChange={changeHandler}
+      />
+      <div>
+        <label htmlFor="candidates">Candidates</label>
+        <p>Get notified when a candidate applies for a job.</p>
+      </div>
+      </div>
+
           
