@@ -92,4 +92,29 @@ function App() {
       onChange={changeHandler}
       className="outline w-full mb-3"
     />
+        <br/>
+    <label htmlFor="city">City</label>
+    <br/>
+    <input
+      type="text"
+      name="city"
+      id="city"
+      placeholder="B-25C"
+      value={formData.city}
+      onChange={changeHandler}
+      className="outline w-full mb-3"
+    />
+
+  <br/>
+    <label htmlFor="state">State / Province</label>
+    <br/>
+    <input
+      type="text"
+      name="state"
+      id="state"
+      placeholder="Bihar"
+      value={formData.state}
+      onChange={changeHandler}
+      className="outline w-full mb-3"
+    />
         
