@@ -1,1 +1,14 @@
+.App {
+    margin: 20px;
+    margin-left: 50px;
+  }
 
+  ::placeholder{
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
