@@ -38,4 +38,30 @@ function App() {
       className="outline w-full mb-3"
     />
 
+         <br/>
+    <label htmlFor="lastName">Last name</label>
+    <br/>
+    <input
+      type="text"
+      name="lastName"
+      id="lastName"
+      placeholder="Babbar"
+      value={formData.lastName}
+      onChange={changeHandler}
+      className="outline w-full mb-3"
+    />
+
+    <br/>
+    <label htmlFor="email">Email Address</label>
+    <br/>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="love@abcd.com"
+      value={formData.email}
+      onChange={changeHandler}
+      className="outline w-full mb-3"
+    />
+
         
