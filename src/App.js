@@ -63,5 +63,33 @@ function App() {
       onChange={changeHandler}
       className="outline w-full mb-3"
     />
+        <br/>
+    <label htmlFor="country">Country</label>
+    <br/>
+    <select
+      id="country"
+      name="country"
+      value={formData.country}
+      onChange={changeHandler}
+      className="outline w-full mb-3"
+      >
 
+      <option>Bangladesh</option>
+      <option>United States</option>
+      <option>Canada</option>
+      <option>England</option>
+    </select>
+
+    <br/>
+    <label htmlFor="streetAddress">Street Address</label>
+    <br/>
+    <input
+      type="text"
+      name="streetAddress"
+      id="streetAddress"
+      placeholder="B-25C"
+      value={formData.streetAddress}
+      onChange={changeHandler}
+      className="outline w-full mb-3"
+    />
         
