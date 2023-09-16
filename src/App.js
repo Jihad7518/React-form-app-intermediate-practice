@@ -165,4 +165,22 @@ function App() {
       </div>
       </div>
 
+ <div className="flex">
+      <input
+        id="offers"
+        name="offers"
+        type="checkbox"
+        checked={formData.offers}
+        onChange={changeHandler}
+      />
+      <div>
+        <label htmlFor="offers">Offers</label>
+        <p>Get notified when a candidate accepts or rejects an offer.
+
+</p>
+      </div>
+      </div>
+      
+
+
           
